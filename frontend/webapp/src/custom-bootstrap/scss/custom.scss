@@ -1,0 +1,50 @@
+// Run `npm run bootstrap:watch` or `npm run bootstrap:build` to regenerate custom Bootstrap CSS (custom-bootstrap/custom.css)
+// We need to use this workaround because create-react-app 1.x doesn't support SASS.
+// To use SASS, we need to eject, which makes future upgrade very difficult. So the work around is to build customize version via the commands above.
+// create-react-app 2.x will support this. Once that happens, we could remove this workaround.
+
+// UI palatte from https://w.amazon.com/bin/view/AWS/brand/resources/color/
+$white : #FFFFFF;
+$oxygen : #FAFAFA;			// Background and table header
+$magnesium : #F2F4F4;		// Background and table header
+$chromium : #EAEDED;		// Secondary chrome
+$zinc : #D5DBDB;				// Shadows
+$silver : #AAB7B8;			// Disabled/visited data on dark background
+$platinum : #879196;		// Tertiary
+$mercury : #545B64;			// Secondary data
+$copper : #EC7211;			// Buttons
+$bromine : #EB5F07;			// Complementary or roll over
+$argon : #00A1C9;				// Hyperlink on dark background
+$cobalt : #007DBC;			// Hyperlink
+$fluorine : #6AAF35;		// Postive state on dark background
+$phosphorus : #1E8900;	// Positive state
+$helium : #FF5746;			// Negative state on dark background
+$neon : #DF3312;				// Negative state
+
+// Polaris palatte from https://polaris.corp.amazon.com/system/foundation/colors/
+$lead: #16191f;
+// Brand Colors
+$squid-ink: #232F3E;
+$amazon-orange: #FF9900;
+
+// Overrides standard bootstrap variables
+// The list of variables can be found in "node_modules/bootstrap/scss_variables.scss". We can override for the ones with !default behind.
+// See https://getbootstrap.com/docs/4.0/getting-started/theming/ for more details
+
+// Body
+$body-color: $lead;
+
+// Theme
+$primary: $copper;
+$secondary: $chromium;
+$success: $phosphorus;
+$danger: $neon;
+
+$primary-hover: $bromine;
+$secondary-hover: $silver;
+
+// Link
+$link-color: $cobalt;
+
+// Bootstrap and its default variables
+@import "node_modules/bootstrap/scss/bootstrap";

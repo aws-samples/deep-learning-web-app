@@ -1,0 +1,23 @@
+export const OPTIMIZERS = {
+  ADAM: 'adam',
+  SGD: 'sgd'
+};
+
+export const ACTIVATION_FUNCTIONS = {
+  TANH: 'tanh',
+  LINEAR: 'linear'
+};
+
+export const TRAINING_TYPES = {
+  MODEL: 'MODEL',
+  HPO: 'HPO',
+};
+
+export const TRAINING_STATUS = {
+  INITIALIZED: 'INITIALIZED',
+  TRAINING_MODEL: 'TRAINING_MODEL',
+  DELETING_OLD_MODEL: 'DELETING_OLD_MODEL',
+  DEPLOYING_MODEL: 'DEPLOYING_MODEL',
+  READY: 'READY',
+  ERROR: 'ERROR',
+};

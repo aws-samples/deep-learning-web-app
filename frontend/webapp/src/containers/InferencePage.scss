@@ -1,0 +1,32 @@
+.home-link-text {
+  margin-left: 1rem;
+}
+
+.home-instruction {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  color: #333333;
+  font-style: italic;
+}
+
+.home-input-box {
+  .home-input-area {
+    span.input-group-text {
+      width: 35px;
+    }
+
+    margin-bottom: 2rem;
+  }
+
+  .step-input-row {
+    margin-bottom: 0.5rem;
+  }
+
+  .col-form-label {
+    font-weight: bold;
+  }
+}
+
+.home-result-graph {
+  margin-top: 3rem;
+}
