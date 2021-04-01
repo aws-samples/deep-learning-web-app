@@ -1,3 +1,0 @@
-{
-  "body": "{\"trainingDataS3Name\":\"SL_train_DG_mod.csv\",\"usedDataPercentage\":10,\"trainValidationSplit\":0.15,\"maxEval\":3,\"randomState\":50,\"numLayersLow\":6,\"numLayersHigh\":9,\"nbEpochs\":5,\"optimizers\":[\"adam\"],\"activationFunctions\":[\"tanh\"],\"target\":\"PE_\",\"batchNormalization\":true,\"includeDropout\":false,\"lossMetric\":\"mae\",\"monitorMetric\":\"val_mean_absolute_error\",\"lrUpdatePatience\":7,\"earlyStoppingPatience\":15,\"choiceOfNodeNumbers\":[16,32,64,128,256,512,1024,2048],\"batchSize\":[32],\"dropout\":[0.2,0.5]}"
-}

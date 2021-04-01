@@ -1,3 +1,0 @@
-{
-  "body": "{\"trainingDataS3Name\":\"SL_train_DG_mod.csv\",\"noNodesInLayer\":[1,1],\"selectedOptimizer\":\"adam\",\"selectedActivationFunction\":\"tanh\",\"nbEpochF\":1,\"batchSizeF\":1,\"numLayersF\":2}"
-}
