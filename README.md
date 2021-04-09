@@ -22,7 +22,7 @@ This repo contains files for the following AWS blog: "Creating an end-to-end app
 
 # Local Testing
 
-Installing this app, will also treate a Sagemaker notebook instance with the name "Notebook". To access this, go to your AWS console, and then select Sagemaker service and click on "Notebook Instances" on the left. You should see the content of this repo already copied there. Notebooks for local testing and building docker container can be found in the following directory: ‎⁨deep-learning-web-app⁩ ▸ ⁨machine-learning⁩  ▸ test_on_notebook. For more info, refer to the Appendix section in the blog.
+Installing this app, will also create a Sagemaker notebook instance with the name "Notebook". To access this, go to your AWS console, and then select Sagemaker service and click on "Notebook Instances" on the left. You should see the content of this repo already copied there. Notebooks for local building and testing the docker container can be found in the following directory: ‎⁨deep-learning-web-app⁩ ▸ ⁨machine-learning⁩  ▸ test_on_notebook. For more info, refer to the Appendix section in the blog.
 
 # Overview of components
 
