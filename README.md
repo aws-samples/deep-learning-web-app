@@ -1,9 +1,9 @@
-# dnn-app-blog
+# dnn-web-app-blog
 This repo contains files for the following AWS blog: "Creating an end-to-end application for orchestrating custom deep learning HPO, training, and inference using AWS Step Functions"
 
 
 
-# Prerequisite
+# Prerequisites
 1. Install Docker (tested on Docker Desktop version 2.1.0.5). This is required for SAM. We also recommend that you create an account in docker and log into it when installing this app, to avoid limit restrictions.
 2. Install SAM CLI in your local machine. The installation steps are in [this link](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html). If you have never used SAM before, it is recommended to go through "Tutorial: Deploying a Hello World Application" section. It should take about 10 minutes to finish. 
 3. Install Python version 3.7.6 
