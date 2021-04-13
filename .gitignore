@@ -1,0 +1,6 @@
+src/config.js-e
+node_modules
+venv
+.aws-sam
+packaged.yml
+.idea
