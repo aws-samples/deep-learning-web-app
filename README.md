@@ -5,7 +5,8 @@ This repo contains files for the following AWS blog: "Creating an end-to-end app
 
 # Prerequisites
 1. Docker (tested on Docker Desktop version 3.2.2). This is required for SAM and building custom image. We also recommend that you create an account in docker and log into it when installing this app, to avoid limit restrictions.
-2. SAM CLI The installation steps are in [this link](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html). If you have never used SAM before, it is recommended to go through "Tutorial: Deploying a Hello World Application" section. It should take about 10 minutes to finish. 
+2. SAM CLI The installation steps are in [this link](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html). 
+    * If you have never used SAM before, it is recommended to go through "Tutorial: Deploying a Hello World Application" section. It should take about 10 minutes to finish. 
 3. Python 3.7 (tested with version 3.7.6)
 4. NodeJS 10.x or 12.x (tested with version 10.20.1 and 12.14.1)
 5. Have access to Public ECR (by running `aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws` , see details [here](https://docs.aws.amazon.com/AmazonECR/latest/public/public-registries.html#public-registry-auth))
