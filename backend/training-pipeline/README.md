@@ -1,6 +1,6 @@
 # Running locally
 
-You can start the application on `localhsot:8080` with this CLI. If you haven't installed SAM CLI, please refer to the README.md in the root of this project.
+You can start the application on `localhost:8080` with SAM CLI. If you haven't installed SAM CLI, please refer to the README.md in the root of this project.
 ```shell script
 sam local start-api --port 8080 --env-vars env.json
 ```

@@ -1,6 +1,8 @@
-export default {
+import awsLogo from './assets/aws-logo-on-light-bg.png';
+
+const config = {
   HEADER_TITLE: "${header-title}",
-  HEADER_LOGO: "${header-logo}",
+  HEADER_LOGO: awsLogo,
 
   MAX_ATTACHMENT_SIZE: 5000000,
   s3: {
@@ -18,3 +20,5 @@ export default {
     IDENTITY_POOL_ID: "${cognito-identity-pool-id}"
   }
 };
+
+export default config;

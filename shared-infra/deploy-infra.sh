@@ -9,14 +9,15 @@ aws cloudformation deploy \
   --template template.yml \
   --stack-name ${STACK_NAME}
 
-
 # These results should be passed to Frontend and Backend stack
 echo "########################"
 echo "## Deployment Bucket:"
 echo "########################"
-aws cloudformation describe-stacks --stack-name ${STACK_NAME} --query 'Stacks[0].Outputs[?OutputKey==`DeploymentBucketName`].OutputValue' --output text
+DeploymentBucketName=$(aws cloudformation describe-stacks --stack-name ${STACK_NAME} --query 'Stacks[0].Outputs[?OutputKey==`DeploymentBucketName`].OutputValue' --output text)
+echo "$DeploymentBucketName"
 
 echo "########################"
 echo "## Training Bucket:"
 echo "########################"
-aws cloudformation describe-stacks --stack-name ${STACK_NAME} --query 'Stacks[0].Outputs[?OutputKey==`TrainingBucketName`].OutputValue' --output text
+TrainingBucketName=$(aws cloudformation describe-stacks --stack-name ${STACK_NAME} --query 'Stacks[0].Outputs[?OutputKey==`TrainingBucketName`].OutputValue' --output text)
+echo "$TrainingBucketName"

@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Exit when any command fails
-set -e
-
 # The name of our algorithm
 algorithm_name=dnn
 

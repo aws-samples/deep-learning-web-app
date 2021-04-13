@@ -1,14 +1,13 @@
 #!/usr/bin/env bash
 
 # Example usage
-# ./deploy-webapp.sh deep-learning-webapp deep-learning-backend aws-us-east-1-853562708331-deep-learning-infra-deployment us-east-1 HEADER_TITLE HEADER_LOGO
+# ./deploy-webapp.sh deep-learning-webapp deep-learning-backend aws-us-east-1-853562708331-deep-learning-infra-deployment us-east-1 HEADER_TITLE
 
 STACK_NAME=$1
 BACKEND_STACK_NAME=$2
 S3_TMP_BUCKET=$3
 REGION=$4
 HEADER_TITLE=$5
-HEADER_LOGO=$6
 
 ### Deploy Infra for hosting Frontend
 aws cloudformation package \
@@ -51,7 +50,6 @@ echo "Endpoint URL: ${endpointUrl}"
 
 sed -i -e "s/\${region}/$REGION/g" src/config.js
 sed -i -e "s/\${header-title}/$HEADER_TITLE/g" ./src/config.js
-sed -i -e "s#\${header-logo}#$HEADER_LOGO#g" ./src/config.js
 cat src/config.js
 
 
