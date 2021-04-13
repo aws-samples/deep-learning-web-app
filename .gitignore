@@ -1,6 +1,14 @@
-src/config.js-e
+# Frontend
+config.js
+config.js-e
 node_modules
+build
+
+# Backend
 venv
 .aws-sam
 packaged.yml
+
+# All
 .idea
+.DS_Store
