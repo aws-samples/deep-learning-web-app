@@ -1,3 +1,5 @@
+import awsLogo from './assets/aws-logo-on-light-bg.png';
+
 export default {
   HEADER_TITLE: "${header-title}",
   HEADER_LOGO: "${header-logo}",
