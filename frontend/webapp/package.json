@@ -18,7 +18,7 @@
     "react-scripts": "4.0.3",
     "reactstrap": "8.4.1",
     "recharts": "1.8.5",
-    "whatwg-fetch": "2.0.3"
+    "whatwg-fetch": "3.6.2"
   },
   "scripts": {
     "start": "react-scripts start",
