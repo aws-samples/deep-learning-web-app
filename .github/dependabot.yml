@@ -1,0 +1,15 @@
+version: 2
+updates:
+  # Maintain dependencies for frontend
+  - package-ecosystem: "npm"
+    directory: "/frontend/webapp"
+    schedule:
+      interval: "daily"
+    # Prefix all commit messages with "Frontend"
+    # include a list of updated dependencies
+    commit-message:
+      prefix: "Frontend"
+      include: "scope"
+    labels:
+      - "frontend"
+      - "dependencies"
