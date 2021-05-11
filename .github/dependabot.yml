@@ -5,6 +5,9 @@ updates:
     directory: "/frontend/webapp"
     schedule:
       interval: "daily"
+    # Only create pull requests to update lockfiles. 
+    # Ignore any new versions that would require package manifest changes.
+    versioning-strategy: lockfile-only
     # Prefix all commit messages with "Frontend"
     # include a list of updated dependencies
     commit-message:
