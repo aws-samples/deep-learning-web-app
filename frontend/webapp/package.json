@@ -6,7 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "@aws-amplify/ui-react": "0.2.15",
+    "@aws-amplify/ui-react": "1.1.0",
     "aws-amplify": "3.0.24",
     "bootstrap": "4.4.1",
     "classnames": "^2.2.6",
