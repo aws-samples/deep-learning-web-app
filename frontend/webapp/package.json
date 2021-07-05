@@ -3,22 +3,32 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
     "@aws-amplify/ui-react": "0.2.15",
     "aws-amplify": "3.0.24",
     "bootstrap": "4.4.1",
     "classnames": "^2.2.6",
-    "node-sass": "4.14.1",
     "open-iconic": "1.1.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-router-dom": "4.3.1",
-    "react-scripts": "4.0.3",
     "reactstrap": "8.4.1",
     "recharts": "1.8.5",
     "whatwg-fetch": "2.0.3"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "node-sass": "6.0.1",
+    "react-scripts": "4.0.3"
+  },
+  "resolutions": {
+    "browserslist": ">=4.16.5",
+    "css-what": ">=5.0.1",
+    "dns-packet": ">=1.3.2",
+    "glob-parent":">=5.1.2",
+    "trim-newlines": ">=3.0.1",
+    "ws": ">=7.4.6"
   },
   "scripts": {
     "start": "react-scripts start",
