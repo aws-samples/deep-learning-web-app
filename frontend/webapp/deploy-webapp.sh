@@ -66,8 +66,8 @@ distributionid=`aws cloudformation describe-stacks --stack-name ${STACK_NAME} --
 echo "Distribution Id: ${distributionid}"
 
 
-npm install
-npm run build
+yarn install
+yarn run build
 
 aws s3 sync ./build/ s3://${websitebucket} --delete # --acl public-read  # S3 usually block public-read by default now. Need to deploy to CloudFront
 
