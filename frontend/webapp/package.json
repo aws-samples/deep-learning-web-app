@@ -19,10 +19,14 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "browserslist": "4.16.5",
-    "dns-packet": ">=1.3.2",
     "node-sass": "6.0.1",
-    "react-scripts": "4.0.3",
+    "react-scripts": "4.0.3"
+  },
+  "resolutions": {
+    "browserslist": ">=4.16.5",
+    "css-what": ">=5.0.1",
+    "dns-packet": ">=1.3.2",
+    "glob-parent":">=5.1.2",
     "trim-newlines": ">=3.0.1",
     "ws": ">=7.4.6"
   },

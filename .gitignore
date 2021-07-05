@@ -3,6 +3,7 @@ config.js
 config.js-e
 node_modules
 build
+yarn-error.log
 
 # Backend
 venv
