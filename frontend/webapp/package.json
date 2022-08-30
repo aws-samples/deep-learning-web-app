@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@aws-amplify/ui-react": "0.2.15",
-    "aws-amplify": "3.0.24",
+    "aws-amplify": "3.4.3",
     "bootstrap": "4.4.1",
     "classnames": "^2.2.6",
     "open-iconic": "1.1.1",
@@ -19,7 +19,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "node-sass": "6.0.1",
+    "node-sass": "^6.0.1",
     "react-scripts": "4.0.3"
   },
   "resolutions": {
@@ -38,7 +38,8 @@
     "tar": ">=6.1.9",
     "trim-newlines": ">=3.0.1",
     "url-parse": ">=1.5.8",
-    "ws": ">=7.4.6"
+    "ws": ">=7.4.6",
+    "scss-tokenizer": ">=0.4.3"
   },
   "scripts": {
     "start": "react-scripts start",
