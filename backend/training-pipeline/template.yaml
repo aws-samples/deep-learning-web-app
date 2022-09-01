@@ -126,6 +126,8 @@ Resources:
                 - sagemaker:DeleteEndpointConfig
                 - sagemaker:DeleteEndpoint
                 - sagemaker:UpdateEndpoint
+                - sagemaker:AddTags
+                - sagemaker:DeleteTags
                 - sagemaker:ListTags
                 - sqs:SendMessage
                 - sns:Publish
