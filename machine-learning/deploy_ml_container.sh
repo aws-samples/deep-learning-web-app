@@ -5,15 +5,17 @@
 
 STACK_NAME=$1
 S3_CFN_BUCKET=$2
-
+REGION=$3
 
 # create CFN package and deploy
 aws cloudformation package \
+  --region ${REGION} \
   --template-file template.yml \
   --s3-bucket ${S3_CFN_BUCKET} \
   --output-template-file packaged.yml
 
 aws cloudformation deploy \
+  --region ${REGION} \
   --template-file ./packaged.yml \
   --stack-name ${STACK_NAME} \
   --capabilities CAPABILITY_NAMED_IAM \

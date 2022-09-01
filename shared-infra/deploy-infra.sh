@@ -4,8 +4,10 @@
 # ./deploy-infra.sh deep-learning-infra
 
 STACK_NAME=$1
+REGION=$2
 
 aws cloudformation deploy \
+  --region ${REGION} \
   --template template.yml \
   --stack-name ${STACK_NAME}
 

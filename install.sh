@@ -5,7 +5,7 @@ set -e
 
 # Parameters from Demo Factory
 STACK_PREFIX=${STACK_PREFIX:-"deep-learning"}
-ADMIN_EMAIL=${ADMIN_EMAIL:-"Your Email Address"}
+ADMIN_EMAIL=${ADMIN_EMAIL:-"youremail@domain.com"}
 HEADER_TITLE=${HEADER_TITLE:-"Application Name"}
 
 
@@ -20,7 +20,7 @@ echo "##########################################"
 echo "##### Deploying infra stack: ${INFRA_STACK_NAME}"...
 echo "##########################################"
 cd shared-infra
-./deploy-infra.sh "${INFRA_STACK_NAME}"
+./deploy-infra.sh "${INFRA_STACK_NAME}" "${REGION}"
 
 deployment_bucket=$(aws cloudformation describe-stacks --stack-name "${INFRA_STACK_NAME}" --query 'Stacks[0].Outputs[?OutputKey==`DeploymentBucketName`].OutputValue' --output text)
 training_bucket=$(aws cloudformation describe-stacks --stack-name "${INFRA_STACK_NAME}" --query 'Stacks[0].Outputs[?OutputKey==`TrainingBucketName`].OutputValue' --output text)
@@ -32,7 +32,7 @@ echo "##########################################"
 echo "##### Deploying ML stack: ${ML_STACK_NAME}"...
 echo "##########################################"
 cd machine-learning
-./deploy_ml_container.sh "${ML_STACK_NAME}" "${deployment_bucket}"
+./deploy_ml_container.sh "${ML_STACK_NAME}" "${deployment_bucket}" "${REGION}"
 ./build-container.sh
 
 cd ..
@@ -42,10 +42,9 @@ echo "##########################################"
 echo "##### Deploying backend stack: ${BACKEND_STACK_NAME}"...
 echo "##########################################"
 cd backend/training-pipeline
-./deploy-training-pipeline.sh "${BACKEND_STACK_NAME}" "${training_bucket}" "${deployment_bucket}" "${ADMIN_EMAIL}"
+./deploy-training-pipeline.sh "${BACKEND_STACK_NAME}" "${training_bucket}" "${deployment_bucket}" "${ADMIN_EMAIL}" ${REGION}
 
-cd ..
-cd ..
+cd ../..
 
 # Frontend
 echo "##########################################"
