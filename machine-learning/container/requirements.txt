@@ -30,7 +30,7 @@ scipy==1.4.1
 setuptools==47.1.1
 six==1.15.0
 tensorboard==1.15.0
-tensorflow==2.5.1
+tensorflow==2.7.2
 tensorflow-estimator==1.15.1
 termcolor==1.1.0
 threadpoolctl==2.1.0
