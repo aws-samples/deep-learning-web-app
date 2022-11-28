@@ -1,7 +1,7 @@
 # dnn-web-app-blog
 This repo contains files for the following AWS blog: "Creating an end-to-end application for orchestrating custom deep learning HPO, training, and inference using AWS Step Functions"
 
-** This project has been archived. The code still works but we do not update the libraries to fix new vulnerabilities. If you want to modify it for production usage, please upgrade the libraries to newver versions.**
+**This project has been archived. The code still works but we do not update the libraries to fix new vulnerabilities. If you want to modify it for production usage, please upgrade the libraries to newver versions.**
 
 # Prerequisites
 1. Docker (tested on Docker Desktop version 3.2.2). This is required for SAM and building custom image. We also recommend that you create an account in docker and log into it when installing this app, to avoid limit restrictions.
